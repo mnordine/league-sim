@@ -42,11 +42,11 @@ class Result {
   final Score _score2;
 
   Result(this._score1, this._score2) {
-    _score1.team.goalsFor += _score1.goals;
-    _score1.team.goalsAgainst += _score2.goals;
+    team1.goalsFor += _score1.goals;
+    team1.goalsAgainst += _score2.goals; // ignore: cascade_invocations
 
-    _score2.team.goalsFor += _score2.goals;
-    _score2.team.goalsAgainst += _score1.goals;
+    team2.goalsFor += _score2.goals;
+    team2.goalsAgainst += _score1.goals; // ignore: cascade_invocations
   }
 
   Team get team1 => _score1.team;
