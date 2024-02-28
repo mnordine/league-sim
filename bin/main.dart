@@ -5,7 +5,7 @@ typedef Entry = ({List<Team> teams, List<Result> results, int run});
 
 void main(List<String> args) {
   const defaultCount = 1000;
-  final count = (args.isEmpty ? defaultCount : int.tryParse(args.first) ?? defaultCount);
+  final count = args.isEmpty ? defaultCount : int.tryParse(args.first) ?? defaultCount;
 
   print('running league sim $count times...');
 
