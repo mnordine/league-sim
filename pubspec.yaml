@@ -1,0 +1,13 @@
+name: league_sim
+description: Simulates league
+version: 0.1.0
+
+environment:
+  sdk: ^3.3.0
+
+dependencies:
+  collection: ^1.18.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.24.0
