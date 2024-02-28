@@ -216,6 +216,12 @@ extension RandomExtension<E> on Iterable<E>{
 
 extension TeamExtension on List<Team> {
   void summarize(IOSink sink) {
+    sink.writeln('${'Team'.padRight(18)}${'GP'.padRight(5)}'
+        '${'W'.padRight(5)}'
+        '${'L'.padRight(5)}'
+        '${'T'.padRight(5)}'
+        '${'PTS'.padRight(5)}');
+
     for (final team in this) {
       sink.writeln('${team.name.padRight(18)}${team.games.toString().padRight(5)}'
           '${team.wins.toString().padRight(5)}'
