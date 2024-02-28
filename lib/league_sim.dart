@@ -96,6 +96,18 @@ final _scoreWeights = [
   10,
 ];
 
+const teamNames = [
+  'TASA',
+  'Bedford White',
+  'Halifax',
+  'Sackville',
+  'Cole Harbour',
+  'Bedford Blue',
+  'Dartmouth',
+  'Chebucto',
+  'East Hants',
+];
+
 (List<Team>, List<Result>) sim() {
   final tasa = Team('TASA');
   final bedfordWhite = Team('Bedford White');
