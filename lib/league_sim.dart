@@ -132,9 +132,6 @@ const teamNames = [
   ];
 
   final games = [
-    Game(chebucto, eastHants),
-    Game(halifax, bedfordWhite),
-    Game(dartmouth, coleharbour),
     Game(bedfordWhite, bedfordBlue),
     Game(coleharbour, sackville),
     Game(eastHants, bedfordBlue),
@@ -169,14 +166,18 @@ const teamNames = [
     Result((team: halifax, goals: 1), (team: eastHants, goals: 0)),
     Result((team: halifax, goals: 3), (team: chebucto, goals: 2)),
     Result((team: halifax, goals: 5), (team: dartmouth, goals: 2)),
+    Result((team: halifax, goals: 0), (team: bedfordWhite, goals: 2)),
 
     Result((team: sackville, goals: 4), (team: eastHants, goals: 1)),
     Result((team: sackville, goals: 2), (team: chebucto, goals: 0)),
 
     Result((team: coleharbour, goals: 3), (team: eastHants, goals: 1)),
     Result((team: coleharbour, goals: 0), (team: chebucto, goals: 3)),
+    Result((team: coleharbour, goals: 4), (team: dartmouth, goals: 0)),
 
     Result((team: dartmouth, goals: 3), (team: chebucto, goals: 1)),
+
+    Result((team: chebucto, goals: 3), (team: eastHants, goals: 3)),
   ];
 
   final playedResults = games.map((game) => game.sim()).toList();
