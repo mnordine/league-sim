@@ -184,16 +184,16 @@ const teamNames = [
 
   final results = existingResults + playedResults;
 
-  for (final result in results) {
-    result.team1.games++;
-    result.team2.games++;
+  for (final Result(:team1, :team2, :tie, :winner, :loser) in results) {
+    team1.games++;
+    team2.games++;
 
-    if (result.tie) {
-      result.team1.ties++;
-      result.team2.ties++;
+    if (tie) {
+      team1.ties++;
+      team2.ties++;
     } else {
-      result.winner!.wins++;
-      result.loser!.losses++;
+      winner!.wins++;
+      loser!.losses++;
     }
   }
 
